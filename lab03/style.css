@@ -1,0 +1,51 @@
+html
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font: 70% arial;
+    color: #D9040F;
+    background-color: #f8f6f7;
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+    margin-top: 0;
+    text-align: left;
+}
+h1
+{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16pt;
+    color: #20165c;
+
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 14pt;
+    color: #890826;
+
+}
+
+h3
+{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12pt;
+    color: #40363F;
+
+}
+
+a:link
+{
+    font-weight: bold;
+    color: #D9040F;
+}
