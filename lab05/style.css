@@ -1,0 +1,123 @@
+html
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body
+{
+    font: 70% arial;
+    color: #D9040F;
+    background-color: #f8f6f7;
+    margin: 0;
+    padding: 0;
+}
+
+p
+{
+    margin-top: 0;
+    text-align: left;
+}
+h1
+{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16pt;
+    color: #20165c;
+
+}
+
+h2
+{
+    font-weight: bold;
+    font-size: 14pt;
+    color: #890826;
+
+}
+
+h3
+{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12pt;
+    color: #40363F;
+
+}
+
+a:link
+{
+    font-weight: bold;
+    color: #0412d9;
+}
+
+a:hover
+{
+    font-weight: bold;
+    color: #D9040F;
+}
+
+
+
+.container
+{
+    display:flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+
+
+.col-left,
+.col-right
+{
+flex:1;
+border: 2px solid black;
+}
+
+.nav-bar{
+    background-color: #20165c;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    display:flex;
+    gap:24px;
+    justify-content: center;
+}
+
+.nav-bar a{
+    color: aqua;
+    font-weight: bold;
+}
+
+.nav-bar a:hover
+{
+    font-weight: bold;
+    color: #D9040F;
+}
+
+.footer-bar
+{
+    background-color: #40363F;
+    padding: 12px 16px;
+    display:flex;
+    gap:24px;
+    justify-content: center;
+}
+
+@media (min-width: 601px) and (max-width: 900px)
+{
+    .container {
+        padding:24px;
+    }
+}
+
+@media (min-width:901px)
+{
+    .container{
+        flex-direction: row;
+        align-items:flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
