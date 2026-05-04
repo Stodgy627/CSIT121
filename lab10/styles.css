@@ -1,0 +1,61 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #FFFFFF;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 16px;
+
+    background-image: url(images/RedCyberBack.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100px;
+}
+
+header {
+    color:#FFEEEE;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main{
+    max-width: 860px;
+    width: 100%;
+    padding: 5%;
+    
+
+}
+
+h1 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    letter-spacing: 1px;
+    color: #CC0000;
+    font-weight: 400;
+
+}
+
+h2{
+font-family: 'DM Serif Display', Georgia, serif;
+    letter-spacing: 1px;
+    color: #FF3333;
+    font-weight: 400;
+    position: relative;
+
+}
+
+nav {
+  font-family: 'DM Sans', sans-serif;
+    background-color: #F5F5F5;
+    color: #333333;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.current{
+    font-weight:bold;
+    background-color:#FF3333;
+}
+

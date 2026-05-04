@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>How is Web Share API used?</title>
+</head>
+<body>
+    <h1>How do you use Web Share API?</h1>
+        <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="importance.html">Web Share API Importance</a></li>
+        <li><a href="about.html" class="current">Web Share API Usage</a></li>
+        <li><a href="sources.html">Sources</a></li>
+        </ul>
+        </nav>
+
+    <h2>Sharing Files:</h2>
+    
+    <div>
+    <ul>
+        <li>navigator.share(data): triggers share dialog, invokes the native sharing mechanism of the underlying OS. Requires transient acitvation, must be triggered through something like a button click.</li>
+        <li>navigator.canShare(data): validates if data is "shareable" before passing it to navigator.share() method </li>
+    </ul>
+    </div>
+
+    <h2>Sharing links and text:</h2>
+
+    <div>
+        <p>To share links and text, you can use the share() method. The object must contain a title, text, url, or files or the browser will throw a TypeError. Therefore you can share a text without a URL or vice versa.</p>
+    </div>
+
+
+
+    <p>The ShareData dictionary has for optional members: files (what is being shared), text (body of the message),
+         title (document title), and url (URL of resource/file being shared).
+    </p>
+    <br>
+
+
+
+    <p>Limitations:</p>
+    <ul>
+        <li>Can only be used on sites that are accessed through HTTPS</li>
+        <li>The defualt allowlist of 'self' makes Web Share API available in
+        first-party contexts by default. To allow for third-party use you must use the iframe's allow="web-share" attribute.</li>
+        <li>Can only share URLs, text, or files</li>
+        <li>Can only be invoked in response to a user action such as a click.</li>
+    </ul>
+</body>
+</html>
