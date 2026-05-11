@@ -1,0 +1,183 @@
+
+
+body {
+    background-color: #F2F2F2;
+    color: #2E2926;
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+.menu-item h3 {
+    color: black;
+}
+
+.navigation ul {
+  display: flex;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #244A73;
+}
+
+.navigation li a {
+  display: block;
+  color: #F2F2F2;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navigation li a:hover {
+  background-color: #4A90D9;
+  color: #F2F2F2;
+}
+
+
+
+
+header {
+    background-color: #F2F2F2;
+    padding: 5%;
+    align-items: center;
+    justify-content: space-between;
+
+    background-image: url('images/BeanBloomBackground.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    max-width: 860px;
+    width: 100%;
+    padding: 5%;
+    flex: 1;
+}
+
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+    color: #244A73;
+    font-weight: 400;
+
+}
+
+.home
+{
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+    color: white; 
+    font-weight: 400;
+}
+
+h2{
+font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+    color: #4A90D9;
+    font-weight: 400;
+    position: relative;
+
+}
+
+
+h3{
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 1px;
+    color: #9EDEC3;
+    font-weight: 400;
+    font-style: italic;
+}
+footer {
+    font-family: 'Cormorant Garamond', serif;
+    background:  #9EDEC3;
+    color: #2E2926;
+   text-align: center;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    margin: 0 16px 16px 0;
+}
+
+.brand-header {
+  display: flex;
+  align-items: center;  
+  gap: 12px;           
+}
+
+.brand-header img {
+  height: 100px;       
+  width: auto;
+}
+
+.current{
+    font-weight:bold;
+    background-color: #F4C27A;
+}
+
+
+.content-table 
+{
+            border-collapse:collapse;
+            margin: 25px 0;
+            font-size:0.9em;
+            min-width:400px;
+}
+        
+.content-table thead tr 
+{
+            background-color: #244A73;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+}
+.content-table th, 
+.content-table td 
+{
+   padding: 12px 15px; 
+}
+
+.content-table tbody tr 
+{
+border-bottom: 1px solid dimgrey;
+}
+
+.content-table tbody tr:nth-of-type(even) 
+{
+background-color: #F4C27A;
+}
+
+@media (max-width:600px) 
+{
+.navigation ul {
+    flex-direction: column;
+}
+
+main 
+{
+    padding: 5% 4%;
+}
+
+.brand-header 
+{
+    flex-direction: column;
+    text-align: center;
+}
+}
+
+
+@media (min-width: 901px) 
+{
+    body 
+    {
+        display: grid;
+        grid-template-rows: auto auto 1fr auto;
+    }
+}
